@@ -49,11 +49,13 @@ const CardsList = () => {
           </div>
         ))}
       </div>
-      <Pagination
-        onChange={onPageChange}
-        count={Math.floor(cardsList.length / NUM_OF_CARDS_PER_PAGE)}
-        shape="rounded"
-      />
+      <div className="card-list-pagination">
+        <Pagination
+          onChange={onPageChange}
+          count={Math.floor(cardsList.length / NUM_OF_CARDS_PER_PAGE)}
+          shape="rounded"
+        />
+      </div>
     </div>
   );
 };
