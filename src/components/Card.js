@@ -9,7 +9,7 @@ const Card = ({ cardData }) => {
       <div>race: {race}</div>
       <div>desc: {desc}</div>
       <div>archetype: {archetype}</div>
-      <img src={card_images[0].image_url} alt="card-image" />
+      <img src={card_images[0].image_url} alt="card" />
     </div>
   );
 };
